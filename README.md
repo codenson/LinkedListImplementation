@@ -19,41 +19,41 @@ Find a node by value: Searches the list for a node containing a specific value.<
 List size: Returns the number of nodes in the list.<br>
 
 # **Usage:** <br>
-1 - Create a LinkedList object: <br>
+## 1 - Create a LinkedList object: <br>
 
 LinkedList list = new LinkedList();<br>
 
-2 - Insert nodes:<br>
+## 2 - Insert nodes:<br>
 list.insertNode(10);<br>
 list.insertNode(20);<br>
 list.insertNode(30);<br>
 
-3 - Find a node by value:<br>
+## 3 - Find a node by value:<br>
 
 Node foundNode = list.findNode(20);<br>
 if (foundNode != null) {
     System.out.println("Node found with value: " + foundNode.value);
 }
 
-4- Remove the first node:
+## 4- Remove the first node:
 
 list.removeFirstNode();
 
-5 - Remove the last node:
+## 5 - Remove the last node:
 
 Node removedNode = list.removeLastNode();
 if (removedNode != null) {
     System.out.println("Removed node: " + removedNode.value);
 }
 
-6- Remove a node by value:
+## 6- Remove a node by value:
 
 Node removedNode = list.removeByValue(20);
 if (removedNode != null) {
     System.out.println("Removed node with value: " + removedNode.value);
 }
 
-7 - Get the size of the list:
+## 7 - Get the size of the list:
 
 int size = list.listSize();
 System.out.println("List size: " + size);
