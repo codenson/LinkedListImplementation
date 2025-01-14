@@ -34,19 +34,19 @@ list.insertNode(30);<br></sub>
 if (foundNode != null) {
     System.out.println("Node found with value: " + foundNode.value);
 }</sub>
-4. ### 4- Remove the first node:
+4. ### Remove the first node:
     <sub>list.removeFirstNode();</sub>
-5. ### 5 - Remove the last node:
+5. ### Remove the last node:
     <sub>Node removedNode = list.removeLastNode();
 if (removedNode != null) {
     System.out.println("Removed node: " + removedNode.value);
 }</sub>
-6. ### 6- Remove a node by value:
+6. ### Remove a node by value:
     <sub>Node removedNode = list.removeByValue(20);
 if (removedNode != null) {
     System.out.println("Removed node with value: " + removedNode.value);
 }</sub>
-7. ### 7 - Get the size of the list:
+7. ### Get the size of the list:
     <sub>int size = list.listSize();
 System.out.println("List size: " + size);</sub>
 ## **Notes:**
