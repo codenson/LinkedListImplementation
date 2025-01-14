@@ -33,9 +33,7 @@ list.insertNode(30);<br>
 </sub>
 
 ### 3 - Find a node by value:<br>
-<sub>
-
-Node foundNode = list.findNode(20);<br>
+<sub>Node foundNode = list.findNode(20);<br>
 if (foundNode != null) {
     System.out.println("Node found with value: " + foundNode.value);
 }
