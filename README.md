@@ -21,9 +21,9 @@ List size: Returns the number of nodes in the list.<br>
 ## **Usage:** <br>
 
 ### 1 - Create a LinkedList object: <br>
-<sub>
+<sup>
 LinkedList list = new LinkedList();<br>
-</sub>
+</sup>
 <sub>
 ### 2 - Insert nodes:<br>
 list.insertNode(10);<br>
