@@ -10,7 +10,7 @@ This implementation provides basic linked list operations, including insertion, 
 LinkedList: A class implementing the linked list functionality.<br>
 LinkedListInterface: An interface defining the contract for linked list operations.<br>
 Node: A class representing an individual node in the linked list, containing a value and a reference to the next node.<br>
-## ** Features ** <br>
+## **Features** <br>
 Insert a node: Allows insertion of a new node at the end of the list.<br>
 Remove the first node: Removes the node at the head of the list.<br>
 Remove the last node: Removes the node at the tail of the list.<br>
@@ -18,7 +18,7 @@ Remove a node by value: Removes a node based on a specific value.<br>
 Find a node by value: Searches the list for a node containing a specific value.<br>
 List size: Returns the number of nodes in the list.<br>
 
-## **Usage:** <br>
+## **Usage:** <br><sub>
 ### 1 - Create a LinkedList object: <br>
 
 LinkedList list = new LinkedList();<br>
@@ -57,6 +57,7 @@ if (removedNode != null) {
 
 int size = list.listSize();
 System.out.println("List size: " + size);
+</sub>
 
 
 ## **Notes:**
