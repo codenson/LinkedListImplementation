@@ -21,42 +21,45 @@ List size: Returns the number of nodes in the list.<br>
 ## **Usage:** <br>
 
 ### 1 - Create a LinkedList object: <br>
-<sup>
-LinkedList list = new LinkedList();<br>
-</sup>
 <sub>
+LinkedList list = new LinkedList();<br>
+</sub>
+
 ### 2 - Insert nodes:<br>
+<sub>
 list.insertNode(10);<br>
 list.insertNode(20);<br>
 list.insertNode(30);<br>
+</sub>
 
 ### 3 - Find a node by value:<br>
+<sub>
 
 Node foundNode = list.findNode(20);<br>
 if (foundNode != null) {
     System.out.println("Node found with value: " + foundNode.value);
 }
-
+</sub>
 ### 4- Remove the first node:
-
+<sub>
 list.removeFirstNode();
-
+</sub>
 ### 5 - Remove the last node:
-
+<sub>
 Node removedNode = list.removeLastNode();
 if (removedNode != null) {
     System.out.println("Removed node: " + removedNode.value);
 }
-
+</sub>
 ### 6- Remove a node by value:
-
+<sub>
 Node removedNode = list.removeByValue(20);
 if (removedNode != null) {
     System.out.println("Removed node with value: " + removedNode.value);
 }
-
+</sub>
 ### 7 - Get the size of the list:
-
+<sub>
 int size = list.listSize();
 System.out.println("List size: " + size);
 </sub>
