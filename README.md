@@ -1,10 +1,10 @@
 **LinkedList Implementation in Java** <br>
-This project demonstrates the implementation of a basic linked list in Java. It includes fundamental operations such as inserting nodes, removing nodes, and searching for specific nodes.
-The implementation is based on a custom LinkedList class, which is defined using the LinkedListInterface.<br>
+<sub>This project demonstrates the implementation of a basic linked list in Java. It includes fundamental operations such as inserting nodes, removing nodes, and searching for specific nodes.
+The implementation is based on a custom LinkedList class, which is defined using the LinkedListInterface.</sub><br>
 
-Description<br>
-This Java project implements a simple Linked List data structure. A linked list is a linear data structure where each element (node) contains a reference (or link) to the next node in the sequence. 
-This implementation provides basic linked list operations, including insertion, removal, and searching for elements.<br>
+**Description**<br>
+<sub>.This Java project implements a simple Linked List data structure. A linked list is a linear data structure where each element (node) contains a reference (or link) to the next node in the sequence. 
+This implementation provides basic linked list operations, including insertion, removal, and searching for elements.</sub><br>
 
 Key Components:<br>
 LinkedList: A class implementing the linked list functionality.<br>
