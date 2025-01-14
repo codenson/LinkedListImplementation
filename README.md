@@ -39,29 +39,19 @@ if (foundNode != null) {
 }
 </sub>
 ### 4- Remove the first node:
-<sub>
-list.removeFirstNode();
-</sub>
+<sub>list.removeFirstNode();</sub>
 ### 5 - Remove the last node:
-<sub>
-Node removedNode = list.removeLastNode();
+<sub>Node removedNode = list.removeLastNode();
 if (removedNode != null) {
     System.out.println("Removed node: " + removedNode.value);
-}
-</sub>
+}</sub>
 ### 6- Remove a node by value:
-<sub>
-Node removedNode = list.removeByValue(20);
+<sub>Node removedNode = list.removeByValue(20);
 if (removedNode != null) {
     System.out.println("Removed node with value: " + removedNode.value);
-}
-</sub>
+}</sub>
 ### 7 - Get the size of the list:
-<sub>
-int size = list.listSize();
-System.out.println("List size: " + size);
-</sub>
-
-
+<sub>int size = list.listSize();
+System.out.println("List size: " + size);</sub>
 ## **Notes:**
 More Linked list mapipulation methods are coming. 
