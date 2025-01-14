@@ -1,25 +1,24 @@
 # **LinkedList Implementation in Java** <br>
-<sub>This project demonstrates the implementation of a basic linked list in Java. It includes fundamental operations such as inserting nodes, removing nodes, and searching for specific nodes.
-The implementation is based on a custom LinkedList class, which is defined using the LinkedListInterface.</sub><br>
+This project demonstrates the implementation of a basic linked list in Java. It includes fundamental operations such as inserting nodes, removing nodes, and searching for specific nodes.
+The implementation is based on a custom LinkedList class, which is defined using the LinkedListInterface.<br>
 
 # **Description**<br>
-<sub>This Java project implements a simple Linked List data structure. A linked list is a linear data structure where each element (node) contains a reference (or link) to the next node in the sequence. 
-This implementation provides basic linked list operations, including insertion, removal, and searching for elements.</sub><br>
+This Java project implements a simple Linked List data structure. A linked list is a linear data structure where each element (node) contains a reference (or link) to the next node in the sequence. 
+This implementation provides basic linked list operations, including insertion, removal, and searching for elements.<br>
 
 # **Key Components:**<br>
 LinkedList: A class implementing the linked list functionality.<br>
 LinkedListInterface: An interface defining the contract for linked list operations.<br>
 Node: A class representing an individual node in the linked list, containing a value and a reference to the next node.<br>
 # ** Features ** <br>
-<sub>Insert a node: Allows insertion of a new node at the end of the list.<br>
+Insert a node: Allows insertion of a new node at the end of the list.<br>
 Remove the first node: Removes the node at the head of the list.<br>
 Remove the last node: Removes the node at the tail of the list.<br>
 Remove a node by value: Removes a node based on a specific value.<br>
 Find a node by value: Searches the list for a node containing a specific value.<br>
-List size: Returns the number of nodes in the list.</sub><br>
+List size: Returns the number of nodes in the list.<br>
 
 # **Usage:** <br>
-<sub>
 1 - Create a LinkedList object: <br>
 
 LinkedList list = new LinkedList();<br>
@@ -58,7 +57,7 @@ if (removedNode != null) {
 
 int size = list.listSize();
 System.out.println("List size: " + size);
-</sub>
+
 
 # **Notes:**
-<sub>More Linked list mapipulation methods are coming. </sub>
+More Linked list mapipulation methods are coming. 
