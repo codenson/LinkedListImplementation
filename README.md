@@ -29,12 +29,11 @@ List size: Returns the number of nodes in the list.<br>
 list.insertNode(20);<br>
 list.insertNode(30);<br></sub>
 
-### 3 - Find a node by value:<br>
-<sub>Node foundNode = list.findNode(20);<br>
+3. ### 3 - Find a node by value:<br>
+   <sub>Node foundNode = list.findNode(20);<br>
 if (foundNode != null) {
     System.out.println("Node found with value: " + foundNode.value);
-}
-</sub>
+}</sub>
 ### 4- Remove the first node:
 <sub>list.removeFirstNode();</sub>
 ### 5 - Remove the last node:
