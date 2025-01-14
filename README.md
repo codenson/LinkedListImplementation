@@ -18,11 +18,13 @@ Remove a node by value: Removes a node based on a specific value.<br>
 Find a node by value: Searches the list for a node containing a specific value.<br>
 List size: Returns the number of nodes in the list.<br>
 
-## **Usage:** <br><sub>
+## **Usage:** <br>
+
 ### 1 - Create a LinkedList object: <br>
-
+<sub>
 LinkedList list = new LinkedList();<br>
-
+</sub>
+<sub>
 ### 2 - Insert nodes:<br>
 list.insertNode(10);<br>
 list.insertNode(20);<br>
