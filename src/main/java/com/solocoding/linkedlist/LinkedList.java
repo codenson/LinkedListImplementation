@@ -98,10 +98,13 @@ public class LinkedList implements LinkedListInterface {
      * Method to remove the first node of the list if the list isn't empty.
      */
     @Override
-    public void removeFirstNode() {
+    public Node removeFirstNode() {
+        Node removedNode = null;
         if (head != null) {
+            removedNode = head;
             head = head.next;
         }
+        return removedNode;
 
     }
 
@@ -113,16 +116,18 @@ public class LinkedList implements LinkedListInterface {
     @Override
     public Node removeLastNode() {
         if (head != null) {
-            if (head.next == null) {
+            if (head.next == null || head.next == null) {
+                Node removednode = head;
                 head = null;
-                return head;
+                return removednode;
             }
 
             for (Node curr = head; curr != null; curr = curr.nextNode()) {
 
                 if (curr.nextNode().nextNode() == null) {
+                    Node removednode = curr.next;
                     curr.next = null;
-                    return curr;
+                    return removednode;
                 }
             }
 
@@ -178,13 +183,43 @@ public class LinkedList implements LinkedListInterface {
     }
 
     /**
+     * Method to reverse the list.
+     * @param currNode The head of the list to be reversed.
+     */
+    @Override
+    public void reverseList(Node currNode) {
+
+        Node newHead = null;
+
+        Node tail = null;
+        while (currNode != null) {
+
+            if (newHead == null) {
+                newHead = tail = new Node(currNode.value);
+            } else {
+                Node temp = new Node(currNode.value);
+                newHead = temp;
+                newHead.next = tail;
+                tail = newHead;
+
+            }
+
+            currNode = currNode.next;
+
+        }
+
+        head = newHead;
+
+    }
+
+    /**
      * Method to print the list. It creates a dummy pointer and uses it to
      * travel the list.
      */
     protected void printLinkedList() {
 
         for (Node curr = head; curr != null; curr = curr.nextNode()) {
-            System.out.print(" " + curr.getValue());
+            System.out.println(" " + curr.getValue());
         }
 
     }

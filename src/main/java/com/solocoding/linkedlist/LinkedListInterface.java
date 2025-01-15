@@ -37,8 +37,10 @@ public interface LinkedListInterface {
 
     /**
      * Method to remove fist node in the list.
+     *
+     * @return Node that was removed or Null if the list is empty.
      */
-    void removeFirstNode();
+    Node removeFirstNode();
 
     /**
      * Method to remove the last node in the list.
@@ -55,5 +57,11 @@ public interface LinkedListInterface {
      * does not exist in the list.
      */
     Node removeByValue(int val);
+    
+    /**
+     * Method to reverse the Linked list.
+     * @param currNode the head of the list. 
+     */
+    void reverseList(Node currNode);
 
 }

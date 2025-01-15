@@ -34,13 +34,9 @@ public class LinkedListTest {
     @BeforeEach
     public void setUp() {
 
-        list.insertNode(0);
-        list.insertNode(1);
-        list.insertNode(2);
-        list.insertNode(3);
-        list.insertNode(4);
-        list.insertNode(5);
-        list.insertNode(6);
+        for (int i = 0; i < 7; i++) {
+            list.insertNode(i);
+        }
     }
 
     @AfterEach
@@ -88,7 +84,7 @@ public class LinkedListTest {
     @Test
     public void testRemoveLastNode() {
 
-        int count = list.listSize() - 2;
+        int count = list.listSize() - 1;
 
         assertEquals(7, list.listSize());
 
@@ -96,12 +92,34 @@ public class LinkedListTest {
             assertEquals(count--, list.removeLastNode().getValue());
 
         }
-        assertSame(null, list.getHead().nextNode());
+        assertSame(0, list.getHead().getValue(), "Head should carry value : 0 ");
+        assertEquals(0, list.removeLastNode().getValue());
+
+        assertNull(list.getHead());
+
+        list.resetList();
+
+        list.insertNode(0);
+        list.insertNode(1);
+        list.insertNode(2);
+
+        assertEquals(2, list.removeLastNode().getValue());
+        assertEquals(2, list.listSize());
+        list.resetList();
+        setUp();
+
+        int c = list.listSize() - 1;
+        for (int i = c; i >= 0; i--) {
+            assertEquals(i, list.removeLastNode().getValue());
+        }
+        assertNull(list.getHead(), "List should be empty here. ");
+
+        setUp();
+        list.insertNode(2);
+        list.printLinkedList();
+        assertEquals(2, list.removeLastNode().getValue());
+
         assertNotNull(list.getHead());
-        assertEquals(0, list.getHead().getValue());
-        //assertEquals(0, list.removeLastNode().valGetter()); 
-        assertSame(null, list.removeLastNode());
-        assertSame(null, list.removeLastNode());
 
     }
 
@@ -129,6 +147,51 @@ public class LinkedListTest {
 
         list.resetList();
         assertNull(list.removeByValue(5), "The List should be empty.");
+
+    }
+
+    @Test
+
+    public void testreverseList() {
+        list.reverseList(list.getHead());
+        assertNotEquals(0, list.getHead().getValue());
+        assertEquals(6, list.getHead().getValue());
+        assertEquals(7, list.listSize());
+
+        int listSize = list.listSize();
+
+        for (int i = listSize; i > 0; i--) {
+
+            assertEquals(i - 1, list.removeFirstNode().getValue());
+
+        }
+        assertNull(list.getHead());
+
+        for (int i = 0; i < 2000; i++) {
+            list.insertNode(i);
+        }
+        list.reverseList(list.getHead());
+        assertEquals(1999, list.getHead().getValue());
+        assertEquals(2000, list.listSize());
+
+        list.reverseList(list.getHead());
+        assertEquals(0, list.getHead().getValue());
+        assertEquals(2000, list.listSize());
+
+        list.reverseList(list.getHead());
+        assertEquals(1999, list.getHead().getValue());
+        assertEquals(1999, list.getHead().getValue());
+        list.printLinkedList();
+        listSize = list.listSize() - 1;
+        for (int i = 0; i <= listSize; i++) {
+            assertEquals(i, list.removeLastNode().getValue());
+        }
+
+        assertNull(list.getHead(), "List should be empty here. ");
+
+        assertNull(list.removeLastNode(), "The list is Empty.");
+        list.reverseList(list.getHead());
+        assertNull(list.getHead());
 
     }
 
