@@ -58,7 +58,6 @@ public class LinkedList implements LinkedListInterface {
     @Override
     public void insertNode(int val) {
 
-        System.out.println(head == null);
         if (head == null) {
             head = new Node(val);
             return;
@@ -184,6 +183,7 @@ public class LinkedList implements LinkedListInterface {
 
     /**
      * Method to reverse the list.
+     *
      * @param currNode The head of the list to be reversed.
      */
     @Override
@@ -210,6 +210,21 @@ public class LinkedList implements LinkedListInterface {
 
         head = newHead;
 
+    }
+    /**
+     * Method to print even nodes from the linked list. 
+     * @param currNode the head of the list. 
+     */
+    @Override
+    public void printEvenNodes(Node currNode){
+        int counter = 0; 
+        for (Node curr = currNode; curr != null; curr = curr.next){
+            if ((counter++)%2 == 0){
+                System.out.println("Node : " + curr.getValue());
+            
+            }
+        
+        }
     }
 
     /**

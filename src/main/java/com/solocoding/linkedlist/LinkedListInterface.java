@@ -63,5 +63,11 @@ public interface LinkedListInterface {
      * @param currNode the head of the list. 
      */
     void reverseList(Node currNode);
+    
+    /**
+     * Method to walk through the linked list and prints even nodes. 
+     * @param currNode  the head of the linked list. 
+     */
+    void printEvenNodes(Node currNode);
 
 }

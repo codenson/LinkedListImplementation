@@ -58,7 +58,7 @@ public class LinkedListTest {
         assertEquals(list.findNode(6).getValue(), 6);
         assertNull(list.findNode(20));
 
-        list.printLinkedList();
+        //list.printLinkedList();
 
     }
 
@@ -193,6 +193,12 @@ public class LinkedListTest {
         list.reverseList(list.getHead());
         assertNull(list.getHead());
 
+    }
+    @Test 
+    public void testEvenNodes(){
+       
+        list.printEvenNodes(list.getHead());
+    
     }
 
 }
